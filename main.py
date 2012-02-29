@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup as bs
 import threading
 import scoregrab
 import linkgrab
+import metacritic
 
 GRABSITES=[]
 LINKSITES=["http://asia.gamespot.com/reviews.html?mode=all&page="+str(i) for i in range(10)]
@@ -20,6 +21,9 @@ def main():
                 if "gamespot" in link:
                     linkgrab.Gamespot(link).start()
                     LINKCOUNT+=1
+                if "metacritic" in link:
+                    metacritic.Metacritic(link).start()
+                
         
                 else:
                     time.sleep(0.1)
