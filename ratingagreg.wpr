@@ -6,5 +6,6 @@
 [project attributes]
 proj.file-list = [loc('linkgrab.py'),
                   loc('main.py'),
+                  loc('metacritic.py'),
                   loc('scoregrab.py')]
 proj.file-type = 'shared'
