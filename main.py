@@ -5,6 +5,8 @@ import scoregrab
 import linkgrab
 import metacritic
 
+
+#Testing git.it
 GRABSITES=[]
 LINKSITES=["http://asia.gamespot.com/reviews.html?mode=all&page="+str(i) for i in range(10)]
 GRABCOUNT=0
